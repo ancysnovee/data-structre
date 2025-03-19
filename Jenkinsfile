@@ -24,7 +24,7 @@ pipeline{
                 echo 'running tests'
                 bat '''
                     call venv\\Scripts\\activate
-                    pytest test.py
+                    pytest testfile.py
                     '''
                     
             }
