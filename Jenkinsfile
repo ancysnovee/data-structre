@@ -2,13 +2,13 @@ pipeline{
     agent any
     stages{
         stage('clone repo'){
-            step{
+            steps{
                 git url:"https://github.com/ancysnovee/data-structre.git",branch:"main"
             }
             
         }
         stage('Dependency'){
-            step{
+            steps{
                 echo 'installing dependencies'
                 bat '''
                     python -m venv venv
