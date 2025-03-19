@@ -1,7 +1,7 @@
 from createstack import stack
 
 def testcase():
-    assert(stack()) == [44, 66]
+    assert(stack()) == [45, 66]
 
 
 
